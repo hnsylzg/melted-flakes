@@ -140,16 +140,16 @@ https://user-images.githubusercontent.com/75824585/220659189-be78cf81-0b8c-4865-
 3. 生成一个基本的配置
 
 ```bash
-  nixos-generate-config --root /mnt
+  sudo nixos-generate-config --root /mnt
 ```
 
 4. 克隆仓库到本地
 
 ```bash
 nix-shell -p git
-git clone  https://github.com/Ruixi-rebirth/melted-flakes.git /mnt/etc/nixos/Flakes
+sudo git clone  https://github.com/Ruixi-rebirth/melted-flakes.git /mnt/etc/nixos/Flakes
 cd  /mnt/etc/nixos/Flakes/
-nix develop --extra-experimental-features nix-command --extra-experimental-features flakes
+sudo nix develop --extra-experimental-features nix-command --extra-experimental-features flakes
 ```
 
 5. 将 /mnt/etc/nixos 中的 `hardware-configuration.nix` 拷贝到 /mnt/etc/nixos/Flakes/hosts/laptop/hardware-configuration.nix
