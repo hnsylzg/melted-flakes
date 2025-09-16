@@ -122,19 +122,19 @@ https://user-images.githubusercontent.com/75824585/220659189-be78cf81-0b8c-4865-
 1. 格式化分区
 
 ```bash
-  mkfs.fat -F 32 /dev/sda1
-  mkfs.ext4 /dev/sda2
+  sudo mkfs.fat -F 32 /dev/sda1
+  sudo mkfs.ext4 /dev/sda2
 ```
 
 2. 挂载
 
 ```bash
-  mount -t tmpfs none /mnt
-  mkdir -p /mnt/{boot,nix,etc/nixos}
-  mount /dev/sda2 /mnt/nix
-  mount /dev/sda1 /mnt/boot
-  mkdir -p /mnt/nix/persist/etc/nixos
-  mount -o bind /mnt/nix/persist/etc/nixos /mnt/etc/nixos
+  sudo mount -t tmpfs none /mnt
+  sudo mkdir -p /mnt/{boot,nix,etc/nixos}
+  sudo mount /dev/sda2 /mnt/nix
+  sudo mount /dev/sda1 /mnt/boot
+  sudo mkdir -p /mnt/nix/persist/etc/nixos
+  sudo mount -o bind /mnt/nix/persist/etc/nixos /mnt/etc/nixos
 ```
 
 3. 生成一个基本的配置
