@@ -114,7 +114,7 @@ https://user-images.githubusercontent.com/75824585/220659189-be78cf81-0b8c-4865-
 
 ### 如何安装？
 
-最小安装(包含 wm,没有 tmpfs as root)，前往[此处](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/tree/minimal)
+最小安装(包含 wm,没有 tmpfs as root)，前往[此处](https://github.com/Ruixi-rebirth/melted-flakes/tree/minimal)
 
 ### 如何安装?(root on tmpfs)
 
