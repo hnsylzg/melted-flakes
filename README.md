@@ -114,7 +114,7 @@ https://user-images.githubusercontent.com/75824585/220659189-be78cf81-0b8c-4865-
 
 ### 如何安装？
 
-最小安装(包含 wm,没有 tmpfs as root)，前往[此处](https://github.com/Ruixi-rebirth/melted-flakes/tree/minimal)
+最小安装(包含 wm,没有 tmpfs as root)，前往[此处](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/tree/minimal)
 
 ### 如何安装?(root on tmpfs)
 
@@ -204,20 +204,20 @@ rm -rf .git
 9. 使用 `mkpasswd {PASSWORD} -m sha-512` 命令生成的密码哈希串替换掉 `/mnt/etc/nixos/Flakes/hosts/laptop/wayland/default.nix` 中的 `users.users.<name>.hashedPassword` 值替换掉。（在文件中有两处需要替换的内容）
 
 10. 选择 Window Manager
-    > Wayland: [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L17) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L36) **取消注释**, 并且**注释** [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L18) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L37)
+    > Wayland: [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L17) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L36) **取消注释**, 并且**注释** [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L18) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L37)
 
-Hyprland: 如果 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/laptop/wayland/default.nix#L12) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/laptop/wayland/home.nix#L6) 有注释, 则均**取消注释**, 并且**注释**掉下面涉及到 sway 的两行
+Hyprland: 如果 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/laptop/wayland/default.nix#L12) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/laptop/wayland/home.nix#L6) 有注释, 则均**取消注释**, 并且**注释**掉下面涉及到 sway 的两行
 
-Sway: 如果 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/laptop/wayland/default.nix#L11) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/laptop/wayland/home.nix#L5) 有注释, 则均**取消注释**, 并且**注释**掉上面涉及到 hyprland 的两行
+Sway: 如果 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/laptop/wayland/default.nix#L11) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/laptop/wayland/home.nix#L5) 有注释, 则均**取消注释**, 并且**注释**掉上面涉及到 hyprland 的两行
 
-> Xorg: [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L18) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L37) **取消注释**, 并且**注释** [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L17) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/hosts/default.nix#L36)
+> Xorg: [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L18) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L37) **取消注释**, 并且**注释** [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L17) 和 [这行](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/default.nix#L36)
 
 Bspwm: 默认
 
 11. 选择主题
     > Wayland
 
-[这里](https://github.com/Ruixi-rebirth/melted-flakes/hosts/laptop/wayland/home.nix#L11-L13) 任意选择一个
+[这里](https://github.com/Ruixi-rebirth/melted-flakes/blob/main/hosts/laptop/wayland/home.nix#L11-L13) 任意选择一个
 
 > Xorg
 
