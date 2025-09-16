@@ -122,8 +122,8 @@ https://user-images.githubusercontent.com/75824585/220659189-be78cf81-0b8c-4865-
 1. 格式化分区
 
 ```bash
-  mkfs.fat -F 32 /dev/nvme0n1p1
-  mkfs.ext4 /dev/nvme0n1p3
+  mkfs.fat -F 32 /dev/sda1
+  mkfs.ext4 /dev/sda2
 ```
 
 2. 挂载
@@ -131,8 +131,8 @@ https://user-images.githubusercontent.com/75824585/220659189-be78cf81-0b8c-4865-
 ```bash
   mount -t tmpfs none /mnt
   mkdir -p /mnt/{boot,nix,etc/nixos}
-  mount /dev/nvme0n1p3 /mnt/nix
-  mount /dev/nvme0n1p1 /mnt/boot
+  mount /dev/sda2 /mnt/nix
+  mount /dev/sda1 /mnt/boot
   mkdir -p /mnt/nix/persist/etc/nixos
   mount -o bind /mnt/nix/persist/etc/nixos /mnt/etc/nixos
 ```
